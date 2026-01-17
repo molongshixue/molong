@@ -3,12 +3,12 @@ on:
   workflow_dispatch:
     inputs:
       server_name:
-        description: 'Bilibili'
+        description: '区服名称-必须（必须是英文字母！例如 Bilibili，台服和外服请使用XAPK AzurLane JMBQ Build Work）'
         required: true
         type: string
         default: ''
       download_url:
-        description: 'https://drive.google.com/file/d/12Fzy-THVrfg7vbxnmg_ImO2eExQCj6yp/view?usp=drive_link'
+        description: 'APK下载链接（只能填入直链，最好使用国外云盘的直链，例如Google云盘）'
         required: true
         type: string
         default: ''
