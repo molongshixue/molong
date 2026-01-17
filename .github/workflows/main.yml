@@ -8,7 +8,7 @@ on:
         type: string
         default: ''
       download_url:
-        description: 'APK下载链接（只能填入直链，最好使用国外云盘的直链，例如Google云盘）'
+        description: 'https://drive.google.com/file/d/1fYM1xdyklRMFYsidxnikN4E85eYXUKOr/view?usp=drive_link'
         required: true
         type: string
         default: ''
