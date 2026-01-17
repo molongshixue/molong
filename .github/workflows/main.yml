@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       server_name:
-        description: ' Bilibili '
+        description: 'Bilibili'
         required: true
         type: string
         default: ''
@@ -45,7 +45,6 @@ jobs:
         run: |
           chmod +x merge_build.sh
           ./merge_build.sh "${{ github.event.inputs.server_name }}" "${{ github.event.inputs.download_url }}"
-
       # 步骤6：创建 Release 并上传所有分卷文件
       - name: Release and Upload Assets
         uses: ncipollo/release-action@v1
